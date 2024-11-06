@@ -1,110 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
     <head>
-    <meta charset="utf-8">
-        <title>이지윤</title>
+        <meta charset="utf-8">
+        <title>introduce</title>
+        <p><a href="https://pixabay.com">
+            <img src="https://i.ibb.co/6B8V6Lv/welsh-corgi-8492879-640.jpg" 
+            alt="good dog" 
+            width="100px" height="100px"></a></p>
+        <p>wellcome to my introduce web page.</p>
+        <p>have a 'good dog' day!</p>
     </head>
     <body>
         <header>
-            <p><h1>이지윤<br><em>jiyoon Lee</em></h1></p>
+            <p><h1>이지윤</h1><h3><em>Jiyoon Lee</em></h3></p>
         </header>
         <nav>
-            <p><h2>수강생 사이트 메뉴</h2></p>
+            <pre>
+    <strong><h2>안녕하세요!</h2></strong>구름 딥다이브 React기반 프론트엔드 개발자 취업 특화 과정을 수강하고 있는 이지윤입니다
+            </pre>
         </nav>
-        <section>
-            <ul>
-            <p><h3>수강생 <br>기사</h3></p>
+        <main>
             <article>
-                <p><pre>
-                    <strong>안녕하세요 이지윤입니다</strong>
-                    구름 딥다이브 React프론트엔드 <ins>2회차 수강생</ins>입니다
-                    수업을 열심히 듣겠습니다 <del>어려워요</del>
-                </pre></p>
+                <h3>jiyoon is</h3>
+                <ul>
+                    <form>
+                        <li>
+                        <p>infp</p>
+                        </li>
+                        <li><p>
+                        like
+                        <ol>
+                            <li>떡볶이</li>
+                            <li>영화</li>
+                            <li>전시회</li>
+                        </ol>
+                        </p></li>
+                        <li><p>
+                        dislike
+                        <ol>
+                            <li>일이 잘 풀리지 않는 상황</li>
+                            <li>부정적인 기분</li>
+                        </ol>
+                        </p></li>
+                    </form>
+                </ul>
             </article>
-            <article>
-                <h3>회원가입</h3>
+            <section>
+                <p><strong>send message</strong></p>
                 <form action="my-app" method="get">
                     <div>
-                        <label for="userid">아이디: </label>
-                        <input type="text" id="userid" name="id" placeholder="아이디를 입력하세요.">
+                        <label for="userid">성함: </label>
+                        <input type="text" id="user id" placeholder="성함을 입력하세요">
                     </div>
                     <div>
-                        <label for="password">비밀번호: </label>
-                        <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요.">
-                    </div>
-                    <div>
-                        <label for="gender">성별: </label>
-                        <select name="gender" id="gender">
-                            <option value="male">남성</option>
-                            <option value="female">여성</option>
-                        </select>
+                        <label for="user">생년월일: </label>
+                        <input type="text" id="text" name="text" placeholder="생년월일을 입력하세요.">
                     </div>
                     <div>
                         <label for="job">직업: </label>
                         <select name="job" id="job">
-                            <option value="student">학생</option>
-                            <option value="teacher">선생님</option>
-                            <option value="etc">기타</option>
+                            <option value="student">student</option>
+                            <option value="teacher">teacher</option>
+                            <option value="ect">ect</option>
                         </select>
                     </div>
                     <div>
-                        <label for="introduce">자기소개: </label>
-                        <textarea name="introduce" id="introduce" placeholder="자기소개를 입력하세요" cols="20" rows="6"></textarea>
+                        <label for="introduce">meno: </label><br>
+                        <textarea 
+                        name="introduce" id="introduce" 
+                        placeholder="남기실 말을 입력해주세요" 
+                        cols="10" rows="6"></textarea>
                     </div>
                     <input type="reset">
-                    <button type="submit">제출</button>
-                    <table> <!--전체를 담고 있는 표-->
-                        <tr> <!--각 행-->
-                            <th>나이</th> <!--각 열의 제목을 담은 제목 셀-->
-                            <th>직업</th>
-                            <th>이름</th>
-                        </tr>
-                        <tr>
-                            <td>23</td> <!--데이터를 담은 데이터 셀-->
-                            <td>대학생</td>
-                            <td>김구름</td>
-                        </tr>
-                        <tr>
-                            <td>24</td>
-                            <td>직장인</td>
-                            <td>구우름</td>
-                        </tr>
-                    </table>
-                    <h3>오늘 할 일</h3>
-                    <ul>
-                        <li>학교 과제하기
-                            <ol>
-                                <li>물리학 실험 보고서</li>
-                                <li>확률과 통계 chapter.3 풀이</li>
-                            </ol>
-                        </li>
-                        <li>Python 강의 듣기</li>
-                    </ul>
-                    <h3>장바구니</h3>
-                    <ol>
-                        <li>세제</li>
-                        <li>돼지 고기 300g</li>
-                        <li>생수</li>
-                    </ol>
-                    
+                    <button type="submit">전송</button>
                 </form>
-            </article>
-        </section>
-        <aside>
-            <p>수강생광고
-                <a href="https://pixabay.com"><img src="https://i.ibb.co/6B8V6Lv/welsh-corgi-8492879-640.jpg" alt="dog:welsh-corgi-8492879-640" width="100px" height="100px"></a>
-                <audio src="1.mp3" controls>
-                </audio>
-            </p>
-        </aside>
+            </section>
+        </main>
         <footer>
-            <div><a href="https://www.naver.com" target="_self">e-mail</a> jiyoon_cc@naver.com</div>
-            <div><a href="https://github.com/lee2567/github-test" target="_blank"
-                explain="jiyoon's github link">github</div>
-    
-            <input type="number"/>
-    
-            <button>start</button>
-        </footer>       
+            <div><a href="https://www.icloud.com" target="_self">e-mail</a> jyoon_cc@icloud.com</div> 
+            <div><a href="https://github.com/lee2567/github-test" target="_blank" explain="jiyoon's github link">github</a></div>
+        </footer>
     </body>
 </html>
