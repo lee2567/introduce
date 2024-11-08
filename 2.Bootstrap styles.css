@@ -1,0 +1,62 @@
+
+a:link {
+	color: rgb(24, 10, 228);
+}
+a:visited {
+	color: rgb(6, 0, 128);
+}
+a:hover {
+	background-color: yellow;
+}
+a:active {
+	background-color: blue;
+}
+
+
+
+#main {
+	width: 200px;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+}
+#left {
+	float: left;
+	background: pink;
+}
+#right {
+	background: lemonchiffon;
+}
+
+
+
+
+grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 5px;
+}
+
+grid-iteml {
+    background: blue;
+    border: brack 5px solid.
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end 3;
+}
+
+
+.grid-container {
+    display: grid;
+    height: 25vh;             
+    place-items: center;       
+  }
+  .main {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+  }

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Example</title>
+  <!-- Bootstrap CSS 파일을 CDN으로 연결 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+          <div class="col-md-1">왼쪽 영역</div>
+          <div class="col-md-1">오른쪽 영역</div>
+        </div>
+      </div>
+
+      <p class="text-center text-muted mt-3 mb-3">This is centered and muted text.</p>
+
+      
+
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Open Modal
+      </button>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Modal content goes here.
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+    <button class="btn btn-primary">Primary Button</button>
+
+
+  <div class="container">
+    <h1 class="text-primary text-center">Welcome to Bootstrap!</h1>
+    <p class="lead">This is a simple example of using Bootstrap components.</p>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-4">Column 1</div>
+          <div class="col-md-4">Column 2</div>
+          <div class="col-md-4">Column 3</div>
+        </div>
+      </div>
+      
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+
+      <div class="card" style="width: 18rem;">
+        <img src="image.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">Some quick example text.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+      
+
+
+
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-success">Success Button</button>
+  </div>
+
+  <!-- Bootstrap JavaScript 파일을 CDN으로 연결 (필요한 경우) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout with Auto Placement</title>
+  <style>
+    /* 그리드 컨테이너 설정 */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-gap: 10px;
+      grid-template-areas: 
+        "header header header"
+        "main main sidebar";
+    }
+
+    /* 그리드 항목 스타일 */
+    .grid-item {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .header {
+      grid-area: header;
+    }
+
+    .main {
+      grid-area: main;
+    }
+
+    .sidebar {
+      grid-area: sidebar;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item header">Header</div>
+    <div class="grid-item main">Main Content</div>
+    <div class="grid-item sidebar">Sidebar</div>
+  </div>
+
+</body>
+</html>
