@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <title>동적인 웹페이지 구현하기</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="2.Bootstrap styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper" id="header">
+            <h1 class="text-primary text-center">동적인 웹페이지 구현하기</h1>
+            <p class="lead text-center">자바 스크립트를 사용하여 동적인 웹페이지를 구현합니다</p>
+            </div>
+        </header>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+            <a class="navbar-brand" href="https://edu.goorm.io">Navbar</a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://edu.goorm.io">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://edu.goorm.io">Features</a>
+                </li>
+              </ul>
+            </div>
+    </nav>
+
+    <main class="grid-container">
+        <section>
+            <p><strong>방문기록</strong></p>
+            <form action="my-app" method="get" id="myForm">
+                <div>
+                    <label for="userid">성함: </label>
+                    <input type="text" id="name" placeholder="성함을 입력하세요">
+                </div>
+                <div>
+                    <label for="user">생년월일: </label>
+                    <input type="text" id="text" name="text" placeholder="생년월일을 입력하세요.">
+                </div>
+                <div>
+                    <label for="job">직업: </label>
+                    <select name="job" id="job">
+                        <option value="student">student</option>
+                        <option value="teacher">teacher</option>
+                        <option value="ect">ect</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="introduce">meno: </label><br>
+                    <textarea 
+                    name="introduce" id="introduce" 
+                    placeholder="남기실 말을 입력해주세요" 
+                    cols="10" rows="6"></textarea>
+                </div>
+                <input type="reset">
+                <button type="submit">전송</button>
+            </form>
+
+            <p id="result"></p>
+
+            <script>
+                const form = document.getElementById("myForm");
+                const result = document.getElementById("result");
+            
+                form.addEventListener("submit", function(event) {
+                    event.preventDefault(); 
+                    const name = document.getElementById("name").value;
+                    result.innerText = "전송은 안됩니다 " + name + "님!";
+                
+
+                var audio = new Audio("https://cdn.pixabay.com/download/audio/2024/08/23/audio_703f9da0e1.mp3?filename=fail-234710.mp3" )
+                audio.play();
+                });
+            
+
+            </script>
+        </section>
+        <br>
+        <aside class="grid-container">
+            <div class="main">
+            <div class="text-primary text-center">
+
+            <div id="left" class="card" style="width: 8rem;" id="aside">
+            <img src="https://i.ibb.co/6B8V6Lv/welsh-corgi-8492879-640.jpg" class="card-img-top" alt="..."
+            width="100px" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">Dog</h5>
+              <p class="card-text">Not Good</p>
+              <a href="https://edu.goorm.io" class="btn btn-primary">Go</a>
+            </div>
+          </div>
+
+          <div id="right" class="card" style="width: 8rem;" id="aside">
+            <img src="https://i.ibb.co/6B8V6Lv/welsh-corgi-8492879-640.jpg" class="card-img-top" alt="..."
+            width="100px" height="100px">
+            <div class="card-body">
+              <h5 class="card-title">Dog</h5>
+              <p class="card-text">Good</p>
+              <a href="https://edu.goorm.io" class="btn btn-primary">Go</a>
+            </div>
+            </div>
+            </div></div>
+        </aside>
+    </main>
+    <footer>
+        
+    </footer>
+    </body>
+</html>
+
+
+
