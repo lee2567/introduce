@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="utf-8"
+    <tilte>
+        자손 선택자 이해하기
+    </tilte>
+    <style>
+        /* 자손 결합자 */
+        section li{
+            color: blue;
+        }
+        section span{
+            color: red;
+        }
+        ul > li {
+            color: orange;
+        }
+
+        /* 일반 형제 결합자 */
+        p ~ span {
+            color: red;
+        }
+
+        /* 인접 형제 결합자 */
+        p + code {
+            background-color: brown;
+            color: white;
+            border: 10px solid brown;
+        }
+        .first + li {
+            color: brown;
+            
+        }
+    </style>
+    </head>
+    <body>
+        <section>
+        <h1 id="title">
+            헬스
+        </h1>
+        <a href="#">태그</a>
+        <p>위키백과, 우리 모두의 백과사전.</p>
+        <p>
+            헬스는 기본적으로 건강을 가리키며 그 외에 다음을 가리킨다
+            <ul>
+                <li class="first">의료</li>
+                <li>보건</li>
+                <li>체렴(게이밍)</li>
+                <li>패션 헬스</li>
+                <li>헬스 클럽</li>
+                <li><span>구글</span> 헬스</li>
+            </ul>
+        </p>
+        </section>
+        <section>
+        <div>
+            <span>동일 선상의 p와 div는 형제</span>
+            <code>자식: div 바로 하위에 있는 태그만 선택</code>
+            <p>여기는 문단이 있습니다</p>
+            <code>이건 인접 태그</code>
+            <span>자손: 1번째 요소 사이에 있는 모든 span태그 선택</span>
+            
+        </div>
+        </section>
+        
+    </body>
+</html>

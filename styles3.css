@@ -1,0 +1,33 @@
+
+/* div display:lnline; =물건 */
+ /*div display:inline-block; = 한 줄에 여러개 진열 상자 */
+ /* span display:block; =한 줄에 하나당 상자 */
+
+div {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+.container {
+    background: yellow;
+    overflow-y: auto;
+    max-height: 400px;  
+    left: 20px;
+    top: 20px;
+    position: relative; 
+}
+
+.box{
+    background: blue;
+    top: 20px;
+    left: 20px;
+    height: 20px;
+    position: sticky;
+}
+
+/* relative: 상대적 */
+/* fixed: 윈도우 기준 */
+/* absolute: 절대적 */
+/* sicky: 스크롤 해도 위지 유지 */
